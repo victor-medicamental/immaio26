@@ -77,27 +77,6 @@
   .dt .pn{color:var(--verde);font-weight:600}.dt .nn{color:var(--vermelho);font-weight:600}
   .insight{background:#eef4ff;border-left:4px solid var(--acc);border-radius:8px;padding:12px 16px;margin:12px 0 16px;font-size:13.5px}
   .insight b{color:var(--azul)}.insight ul{margin:6px 0 0;padding-left:18px}.insight li{margin:2px 0}
-  /* seletor de tema */
-  .themesw{margin-left:auto;display:flex;gap:6px;align-items:center;padding:8px 4px}
-  .themesw button{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#cfe0f5;font-size:12px;padding:6px 12px;border-radius:16px;cursor:pointer}
-  .themesw button.on{background:var(--acc);border-color:var(--acc);color:#08182c;font-weight:600}
-  /* tema azul marinho */
-  body.tema-marinho{background:#0a1526;color:#e6eef9}
-  body.tema-marinho h2.sec{color:#dbe6f5}
-  body.tema-marinho .sub,body.tema-marinho .htitle{color:#9db6d6}
-  body.tema-marinho .card{background:#12233f;border-color:#26364f;box-shadow:none}
-  body.tema-marinho .kpi{background:#17304f}
-  body.tema-marinho .kpi .l{color:#9db6d6}
-  body.tema-marinho .insight{background:#13294a}
-  body.tema-marinho .insight b{color:#cfe0f5}
-  body.tema-marinho .bclbl,body.tema-marinho .bcval,body.tema-marinho .bclegend{color:#c3d6f2}
-  body.tema-marinho .dt td{border-bottom-color:#26364f;color:#e6eef9}
-  body.tema-marinho .dt thead th{background:#0e1e34}
-  body.tema-marinho .dt tbody tr:nth-child(even){background:#17304f}
-  body.tema-marinho .dt .pn{color:#7CFFB0}body.tema-marinho .dt .nn{color:#ff9a90}
-  body.tema-marinho .tabbar button,body.tema-marinho .controls button{background:#17304f;color:#cfe0f5;border-color:#3a4d6b}
-  body.tema-marinho .tabbar button.on,body.tema-marinho .controls button.on{background:var(--azul2);color:#fff;border-color:var(--azul2)}
-  body.tema-marinho .pagefoot{background:#0a1526;color:#9db6d6;border-top-color:#26364f}
 </style>
 </head>
 <body>
@@ -192,13 +171,13 @@
         <div class="kpis"><div class="kpi"><div class="l">Venda 2026</div><div class="v">R$ 291,3 mi</div></div><div class="kpi"><div class="l">Venda 2025</div><div class="v">R$ 301,7 mi</div></div><div class="kpi"><div class="l">Variação</div><div class="v" style="color:var(--vermelho)">−3,45%</div></div><div class="kpi"><div class="l">POS 26/25</div><div class="v">21.724/23.410</div></div></div>
         <div class="controls" data-ytd="GERAL"><button data-m="venda" class="on">Venda</button><button data-m="pos">POS</button><button data-m="vmd">VMD</button></div>
         <div class="barbox" id="cYtd_GERAL"></div></div></div>
-      <div class="tabpanel" data-p="e_cd"><div class="insight"><b>Insights</b><ul><li>FARMA SP cresce +31,8% e vira o maior CD (R$ 114,0 mi).</li><li>FARMA GO recua −40,3%; FARMA ES sem operação relevante em 2026.</li><li>RJ e PR estáveis/positivos (+0,7% e +2,8%).</li></ul></div><div class="card"><div class="htitle">Venda por empresa (CD)</div><div class="barbox" id="cEmp"></div></div></div>
-      <div class="tabpanel" data-p="e_reg"><div class="insight"><b>Insights</b><ul><li>Rosa (GO/DF) +26,9% e Kris (RJ) +11,8% em alta; Alberto (Sul) +8,1%.</li><li>Grandes Contas despenca −71,0%; Lucilene (maior regional) −9,3%.</li></ul></div><div class="card"><div class="htitle">Venda por regional</div><div class="barbox" id="cReg"></div></div></div>
-      <div class="tabpanel" data-p="e_dev"><div class="insight"><b>Insights</b><ul><li>Devoluções pioraram no ano: Valor −R$ 5,9 mi → −R$ 8,5 mi.</li><li>Unidades −845 mil → −1,44 mi; Movimentos 7.747 → 10.178.</li><li>FARMA SP concentra a alta das devoluções.</li></ul></div><div class="card"><div class="htitle">Devolução por empresa</div>
+      <div class="tabpanel" data-p="e_cd"><div class="insight"><b>Insights</b><ul><li>FARMA SP cresce +31,7% e vira o maior CD (R$ 133,0 mi).</li><li>FARMA GO recua −39,3%; FARMA ES sem operação relevante em 2026.</li><li>RJ recua levemente (−1,2%) e PR cresce (+2,2%).</li></ul></div><div class="card"><div class="htitle">Venda por empresa (CD)</div><div class="barbox" id="cEmp"></div></div></div>
+      <div class="tabpanel" data-p="e_reg"><div class="insight"><b>Insights</b><ul><li>Rosa (GO/DF) +32,4% e Kris (RJ) +9,6% em alta; Alberto (Sul) +6,8%.</li><li>Grandes Contas despenca −70,3%; Lucilene (maior regional) −10,1%.</li></ul></div><div class="card"><div class="htitle">Venda por regional</div><div class="barbox" id="cReg"></div></div></div>
+      <div class="tabpanel" data-p="e_dev"><div class="insight"><b>Insights</b><ul><li>Devoluções pioraram no ano: Valor −R$ 7,1 mi → −R$ 10,2 mi.</li><li>Unidades −1,01 mi → −1,71 mi; Movimentos 9.415 → 12.064.</li><li>FARMA SP concentra a alta das devoluções.</li></ul></div><div class="card"><div class="htitle">Devolução por empresa</div>
         <div class="controls" data-dev="DEV"><button data-m="valor" class="on">Valor (R$)</button><button data-m="qtd">Unidades (QTD)</button><button data-m="mov">Movimentos</button></div>
         <div class="barbox" id="cDev"></div></div></div>
-      <div class="tabpanel" data-p="e_fab"><div class="insight"><b>Insights</b><ul><li>Hypera lidera e cresce +13,2% (share ~39% do faturamento).</li><li>Legrand −42,1% e Biolab −54,2% recuam forte; Sanchez Cano entra novo.</li></ul></div><div class="card"><div class="controls" data-tog="GERALfab"><button data-v="comp" class="on">25×26</button><button data-v="var">Var %</button></div><div class="barbox" id="cGERALfab"></div></div></div>
-      <div class="tabpanel" data-p="e_prod"><div class="insight"><b>Insights</b><ul><li>Losartana +84,8%, Nistatina +45,7% e Torsilax C/30 +45,0% puxam.</li><li>Expec XPE 120 recua −71,4%; Neosoro segue líder (+10,4%).</li></ul></div><div class="card"><div class="controls" data-tog="GERALprod"><button data-v="comp" class="on">25×26</button><button data-v="var">Var %</button></div><div class="barbox" id="cGERALprod"></div></div></div>
+      <div class="tabpanel" data-p="e_fab"><div class="insight"><b>Insights</b><ul><li>Hypera lidera e cresce +13,2% (share ~39% do faturamento).</li><li>Legrand −42,1% e Biolab −54,2% recuam forte; Sanchez Cano surge de base marginal.</li></ul></div><div class="card"><div class="controls" data-tog="GERALfab"><button data-v="comp" class="on">25×26</button><button data-v="var">Var %</button></div><div class="barbox" id="cGERALfab"></div></div></div>
+      <div class="tabpanel" data-p="e_prod"><div class="insight"><b>Insights</b><ul><li>Losartana +64,1% e Torsilax C/30 +39,8% puxam; Metoprolol dispara +202,7% (base menor).</li><li>Dipirona Abacaxi recua −9,7%; Neosoro segue líder (+8,6%).</li></ul></div><div class="card"><div class="controls" data-tog="GERALprod"><button data-v="comp" class="on">25×26</button><button data-v="var">Var %</button></div><div class="barbox" id="cGERALprod"></div></div></div>
     </div>
   </div>
 
@@ -344,13 +323,13 @@ regTog('GERALprod','cGERALprod',{labels:['NEOSORO','TORSILAX C/30','NISTATINA+OX
 
 /* CANAIS */
 const CANAIS=[
- {id:'FARMA',nome:'FARMA',v25:193210765,v26:194825460,pos25:19473,pos26:18870,varTxt:'+0,49%',varCls:'pos',
+ {id:'FARMA',nome:'FARMA',v25:193210765,v26:194825460,pos25:19473,pos26:18870,varTxt:'+0,84%',varCls:'pos',
   ytd:{venda:{a:[30362072,25277027,28213806,22972720,30880245,27082540,28422354],b:[26895092,24551586,29463139,26659598,29157801,28400426,29697818]},pos:{a:[12706,11706,11897,11283,11929,11987,12593],b:[12061,11800,12302,12143,12339,11376,12446]},vmd:{a:[1380094,1263851,1484937,1148636,1470488,1425397,1291925],b:[1280719,1363977,1339234,1332980,1457890,1352401,1291209]}},
   fab:{labels:['HYPERA','EUROFARMA','GEOLAB','LEGRAND','PHARLAB','SANCHEZ CANO','MULTILAB','SANDOZ','G-TECH','CELLERA'],a:[68649554,10680867,8980957,17373598,6635616,38310,3912422,4353402,566081,3013276],b:[83175462,10878269,9329982,9183711,5992487,4906143,4367444,4126829,3708339,3666551]},
   prod:{labels:['NEOSORO','TORSILAX C/30','LOSARTANA 50','NISTATINA+OX ZN','DIPIRONA 01GR','DIPIRONA ABACAXI','FINI MELAT 60G','METOPROLOL 25','EXPEC XPE 120','ENXAK (CAZI)'],full:['NEOSORO ADT SOL NASAL 30 ML - NEOQ (S)','TORSILAX C/30 CPR - NEOQ (S)','LOSARTANA 50MG C/30 CPR - NEOQ (G)','NISTATINA+OXIDO DE ZINCO POM 60 GRS - NEOQ (S)','DIPIRONA SODICA 01 GR C/10 CPR - NEOQ (G)','DIPIRONA SODICA ABACAXI FR PL 20ML - NEOQ (G)','FINI DR GOOD MELATONINA 60GOMAS - FINI','METOPROLOL 25MG C/30 CPR - NEOQ (G)','EXPEC XPE 120 ML - LEGRAND (S)','ENXAK C/12 CPR - CAZI (S)'],a:[9450691,6226044,3222226,4394448,3792572,2466232,684,440892,9616567,1438604],b:[11004610,7763635,6377277,6147943,4620740,2722142,2513425,2390726,2244085,2218156]},
   emp:{labels:['FARMA DF','FARMA ES','FARMA GO','FARMA PR','FARMA RJ','FARMA SP'],a:[7298838,-3900,68302183,30986203,37979285,48648155],b:[6836841,5895,48780574,30820122,35892376,72489651]},
   reg:{labels:['LUCILENE','ROSA','KRIS','ALBERTO','GR. CONTAS','JOSEANE'],a:[75687845,31750507,33074124,31237311,17570559,3890419],b:[75445025,42224338,35018366,32873475,5522240,3742017]}},
- {id:'OL',nome:'OL',v25:95379936,v26:70810162,pos25:14336,pos26:10955,varTxt:'−23,57%',varCls:'neg',
+ {id:'OL',nome:'OL',v25:95379936,v26:70810162,pos25:14336,pos26:10955,varTxt:'−25,76%',varCls:'neg',
   ytd:{venda:{a:[11281019,11906965,14779283,13319965,16146387,13656555,13689762],b:[11160455,8330948,11639787,8096288,11825511,11019856,8737319]},pos:{a:[6925,6586,7290,6774,7645,6791,6714],b:[6101,5284,5768,4837,5234,4937,4353]},vmd:{a:[512774,595348,777857,695998,768876,718766,622262],b:[531450,462830,529081,404814,591276,524755,379883]}},
   fab:{labels:['EUROFARMA','HYPERA','SANDOZ','BIOLAB','HERBAMED','NATULAB','ACHE','PHARLAB','CIFARMA','GEOLAB'],a:[30329374,29816372,10177634,8025393,0,941277,2008393,1564496,8487301,759291],b:[26666154,25260207,9386879,2395307,1775052,928828,758924,677019,495405,431861]},
   prod:{labels:['TORSILAX C/30','DIPIRONA 01GR','NISTATINA+OX ZN','DAPAGLIFLOZINA','NEOSORO','LOSARTANA 50','SINVASTATINA 20','DORALGINA','NAPROXENO 550','ROSUVASTATINA 20'],full:['TORSILAX C/30 CPR - NEOQ (G)','DIPIRONA SODICA 01 GR C/10 CPR - NEOQ (G)','NISTATINA+OXIDO DE ZINCO POM 60 GRS - NEOQ (G)','DAPAGLIFLOZINA 10MG C/30 CPR - EURO (G)','NEOSORO ADT SOL NASAL 30 ML - NEOQ (G)','LOSARTANA 50MG C/30 CPR - NEOQ (G)','SINVASTATINA 20MG C/30 CPR - SANDOZ (G)','DORALGINA C/20 CPR - NEOQ (G)','NAPROXENO 550MG C/10 CPR - NEOQ (G)','ROSUVASTATINA 20MG C/30 CPR - SANDOZ (G)'],a:[1680073,2678409,2688755,0,2386119,1482757,1293065,1201447,1124388,976912],b:[3107415,2968602,2604615,2112061,1869310,1269841,1017597,962623,950595,819092]},
@@ -363,19 +342,19 @@ const CANAIS=[
     {id:'ALB',nome:'Alberto · Sul',tot:2201104,fab:{labels:['HYPERA','BIOLAB','EUROFARMA','NATULAB','LANSINOH','CIFARMA','GEOLAB','NUTRIN'],a:[1969525,542488,263511,197713,0,1643270,5258,1],b:[1121461,493735,482824,189631,72174,39412,11210,7129]}},
     {id:'JOS',nome:'Joseane · TLV/OL',tot:2042933,fab:{labels:['HYPERA','EUROFARMA','SANDOZ','HERBAMED','CIFARMA','BIOLAB','PHARLAB','NATULAB'],a:[1121252,662427,265929,0,587120,283410,56205,5837],b:[958482,629866,303072,165927,63594,45014,28974,22147]}}
   ]},
- {id:'WEB',nome:'WEB',v25:13020231,v26:25154229,pos25:4149,pos26:5235,varTxt:'+91,98%',varCls:'pos',
+ {id:'WEB',nome:'WEB',v25:13020231,v26:25154229,pos25:4149,pos26:5235,varTxt:'+93,19%',varCls:'pos',
   ytd:{venda:{a:[1665862,1641014,1735023,1574969,2183797,1993757,2225808],b:[2946614,2755220,3683443,3818244,3618074,3901490,4431144]},pos:{a:[1773,1783,1884,1804,2208,2159,2447],b:[2841,2813,3086,3126,3108,3148,4339]},vmd:{a:[75721,82051,91317,78748,103990,104935,101173],b:[140315,153068,167429,190912,180904,185785,192658]}},
   fab:{labels:['HYPERA','GEOLAB','EUROFARMA','LEGRAND','MULTILAB','PHARLAB','NATULAB','G-TECH','TEUTO','ZYDUS'],a:[2306425,952830,949962,956584,391285,446613,249759,58428,565245,186198],b:[5657551,1732689,1612845,1476676,881237,866136,764815,598083,553508,539044]},
   prod:{labels:['ENXAK (CAZI)','TORSILAX C/30','NEOSORO','EXPEC XPE 120','FOSFOMICINA','METOPROLOL 25','NEOGERMINA 2BI','DORALGINA','DUTAST+TANSU','REPOFLOR'],full:['ENXAK C/12 CPR - CAZI (S)','TORSILAX C/30 CPR - NEOQ (S)','NEOSORO ADT SOL NASAL 30 ML - NEOQ (S)','EXPEC XPE 120 ML - LEGRAND (S)','FOSFOMICINA TROMETAMOL 5,631G C/01 ENV - PHARMASCIENCE (G)','METOPROLOL 25MG C/30 CPR - NEOQ (G)','NEOGERMINA 2BI C/10 FLAC 5 ML - NEOQ (S)','DORALGINA C/20 CPR - NEOQ (S)','DUTASTERIDA+TANSULOSINA 0,5+0,4MG 30 CPS - ZYDUS (G)','REPOFLOR 200MG C/06 CPS - LEGRAND (S)'],a:[37518,84674,187575,355158,0,16901,56286,48634,777,64762],b:[320225,290117,284985,259377,189387,181119,174124,161599,144558,140255]},
   emp:{labels:['FARMA DF','FARMA GO','FARMA MG','FARMA RJ','FARMA SP'],a:[172784,3168916,2406729,3142098,4129704],b:[434905,5145408,6110370,5069015,8394531]},
   reg:{labels:['LUCILENE','ROSA','KRIS','ALBERTO','GR. CONTAS','JOSEANE'],a:[4709351,1255356,2418521,1976547,843638,1816818],b:[7998382,4151365,4211034,5515846,110737,3166866]}},
- {id:'B2LIST',nome:'B2LIST',v25:613402,v26:521948,pos25:1224,pos26:1041,varTxt:'+35,29%',varCls:'pos',
+ {id:'B2LIST',nome:'B2LIST',v25:613402,v26:521948,pos25:1224,pos26:1041,varTxt:'−14,91%',varCls:'neg',
   ytd:{venda:{a:[0,8768,29089,28217,57490,183304,306535],b:[75708,24279,146788,69336,24610,74434,106793]},pos:{a:[0,15,71,101,170,450,394],b:[228,72,318,241,199,176,298]},vmd:{a:[0,2192,2424,2015,3593,10184,13933],b:[4453,2207,7726,4079,1641,3544,5085]}},
   fab:{labels:['HYPERA','LEGRAND','GEOLAB','EUROFARMA','PHARMASCIENCE','G-TECH','PHARLAB','UNICHEM','ACHE','NATULAB'],a:[270359,45894,36784,11692,3124,16826,10681,12627,6982,2856],b:[150982,79793,31634,19096,17885,17693,16822,13398,13243,12945]},
   prod:{labels:['NEOSORO','EXPEC XPE 120','NATUS GERIN','METOPROLOL 25','NISTATINA+OX ZN','AMOX UNICHEM','LOSARTANA 50','DIPIRONA ABACAXI','ENXAK (CAZI)','DUTAST+TANSU'],full:['NEOSORO ADT SOL NASAL 30 ML - NEOQ (S)','EXPEC XPE 120 ML - LEGRAND (S)','NATUS GERIN C/50 CPS - LEGRAND (S)','METOPROLOL 25MG C/30 CPR - NEOQ (G)','NISTATINA+OXIDO DE ZINCO POM 60 GRS - NEOQ (G)','AMOXICILINA 500MG C/21 CPS - UNICHEM','LOSARTANA 50MG C/30 CPR - NEOQ (G)','DIPIRONA SODICA ABACAXI FR PL 20ML - NEOQ (G)','ENXAK C/12 CPR - CAZI (S)','DUTASTERIDA+TANSULOSINA 0,5+0,4MG 30 CPS - ZYDUS (G)'],a:[147615,39341,1489,20915,708,12411,2675,64099,2214,0],b:[41144,35683,18910,17300,16072,13398,12941,12725,12616,10333]},
   emp:{labels:['FARMA DF','FARMA GO','FARMA MG','FARMA RJ','FARMA SP'],a:[131,87268,51272,122106,352625],b:[2373,148641,53011,146963,170960]},
   reg:{labels:['LUCILENE','ROSA','KRIS','ALBERTO','GR. CONTAS','JOSEANE'],a:[326873,77176,92574,48571,50920,17285],b:[168159,148702,141729,51737,7334,4287]}},
- {id:'HPC',nome:'HPC',v25:16072104,v26:34650524,pos25:15955,pos26:18061,varTxt:'+114,36%',varCls:'pos',
+ {id:'HPC',nome:'HPC',v25:16072104,v26:34650524,pos25:15955,pos26:18061,varTxt:'+115,59%',varCls:'pos',
   ytd:{venda:{a:[2074824,1968946,2043535,2066345,2874116,2462213,2582125],b:[3924707,3975051,4661238,4822524,5772777,5762934,5731294]},pos:{a:[7809,7368,7907,7163,7386,7816,7749],b:[9421,9510,9539,10284,10822,11259,11002]},vmd:{a:[94310,98447,107554,103317,136863,129590,117369],b:[186891,220836,211874,241126,288639,274425,249187]}},
   fab:{labels:['SANCHEZ CANO','G-TECH','KATIGUA','HERBAMED','NUTRIN','ARTE NATIVA','BIO INSTINTO','FARMAX','PONTELAND','MAXINUTRI'],a:[43839,641335,2125485,923276,1747684,2113251,0,2449395,1363,0],b:[5226753,4324115,3053479,2898670,2838010,2327628,1680565,1397522,1154514,1030537]},
   prod:{labels:['FINI MELAT 60G','FINI MELAT 120G','INALADOR G-TECH DC1','POMADA FISIOFORT','OMEGA 3 KATIGUA','AP PRESSAO GP400','TIRAS NO CODE','POMADA LANSINOH','GUMMY NIGHT','TIRAS ON CALL'],full:['FINI DR GOOD MELATONINA 60GOMAS - FINI','FINI DR GOOD MELATONINA 120GOMAS - FINI','INALADOR NEBULIZAD G-TECH COMPACT DC1 - G-TECH','POMADA MASSAG FISIOFORT PREMIUM 150G - BIO INSTINTO','OMEGA 3 KATIGUA TRIPLA FONTE 1000MG 120 - KATIGUA','AP PRESSAO G-TECH DIG AUTO PULSO GP400 - G-TECH','TIRAS GLIC G-TECH NO CODE 50UN FREE - G-TECH','POMADA LANOLINA LANSINOH HPA 30G - LANSINOH','GUMMY NIGHT MELATONINA FRAMBOESA 30GOMAS - NUTRIN (S)','TIRAS GLIC ON CALL PLUS II 50UN MEDLEVEN - MEDLEVENSOHN (S)'],a:[684,1160,292119,0,801514,45588,16714,0,63167,50030],b:[2603510,1431595,1091573,794179,724829,721832,569473,564861,522485,492600]},
@@ -384,10 +363,10 @@ const CANAIS=[
 ];
 
 const INS={
- FARMA:['Canal cresce +0,84% no ano; Hypera (+21,2%) puxa o resultado.','Quedas fortes: Legrand −47,1% e Biolab −18,9%.','Hypera concentra ~43% do faturamento do canal.'],
- OL:['Canal caiu −25,76%; Lucilene é o maior regional (R$ 53,5 mi).','Eurofarma e Hypera respondem por ~59% de OL.','Grandes Contas despenca −76% no canal.'],
- WEB:['Maior crescimento do período: +93,19%.','Hypera quase triplicou; POS subiu de 4,1k → 5,2k.','Canal ganhando participação relevante.'],
- B2LIST:['Base pequena e recuo de −14,91% no ano.','Legrand (+73,9%) cresce; Hypera lidera, porém cai −44,2%.','Concentração alta: Top 10 = ~46% do canal.'],
+ FARMA:['Canal cresce +0,84% no ano; Hypera (+21,2%) puxa o resultado.','Quedas fortes: Legrand −47,1% e Pharlab −9,7%.','Hypera concentra ~43% do faturamento do canal.'],
+ OL:['Canal caiu −25,76%; Lucilene é o maior regional (R$ 53,5 mi).','Eurofarma e Hypera respondem por ~73% de OL.','Grandes Contas despenca −75,7% no canal.'],
+ WEB:['Maior crescimento do período: +93,19%.','Hypera mais que dobrou (+145%); POS subiu de 4,1k → 5,2k.','Canal ganhando participação relevante.'],
+ B2LIST:['Base pequena e recuo de −14,91% no ano.','Legrand (+73,9%) cresce; Hypera lidera, porém cai −44,2%.','Concentração alta: Top 10 = ~72% do canal.'],
  HPC:['Crescimento expressivo: +115,59%.','Sanchez Cano e G-Tech entram forte; Katigua lidera recorrentes.','POS subiu de 16,0k → 18,1k.']
 };
 function insBox(id){return INS[id]?'<div class="insight"><b>Insights</b><ul>'+INS[id].map(x=>'<li>'+x+'</li>').join('')+'</ul></div>':'';}
